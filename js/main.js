@@ -559,9 +559,14 @@ function openWhatsAppChat() {
 
 // 
 
-function openModal(productName) {
+function openModal(productName, productImage, productDescription) {
     const modal = document.getElementById('inquireModal');
+
+    // Update modal content
     document.getElementById('modalProductName').textContent = productName;
+    document.getElementById('modalProductImage').src = productImage;
+    document.getElementById('modalProductDescription').textContent = productDescription;
+
     modal.style.display = 'flex';
 }
 
@@ -577,6 +582,7 @@ window.onclick = function (event) {
         closeModal();
     }
 };
+
 
 
 // 
