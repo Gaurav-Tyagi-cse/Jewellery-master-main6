@@ -4819,6 +4819,7 @@ p.checkout-coupon input[type=submit] {
 
 .modal-content {
     background: #fff;
+	top: 11px;
     padding: 20px;
     border-radius: 10px;
     width: 300px;
