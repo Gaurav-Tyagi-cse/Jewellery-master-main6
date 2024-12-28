@@ -585,6 +585,18 @@ window.onclick = function (event) {
 
 
 
+
+const video = document.getElementById('carouselVideo');
+const scrollThreshold = 400; // Set the scroll height threshold (in pixels)
+
+// Event listener to mute/unmute video based on scroll height
+window.addEventListener('scroll', () => {
+    if (window.scrollY > scrollThreshold) {
+        video.muted = true; // Mute the video if scrolled beyond the threshold
+    } else {
+        video.muted = false; // Unmute the video if scrolled above the threshold
+    }
+});
 // 
 
     
